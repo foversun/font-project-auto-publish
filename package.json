@@ -1,0 +1,36 @@
+{
+  "name": "marketing-front-publish-platform-api",
+  "version": "1.0.0",
+  "description": "前端发布平台",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/index.js",
+    "serve": "nodemon --watch src/**/* -e ts,tsx --exec ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.17usoft.com/marketcenter/marketing-front-publish-platform-api.git"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "ts"
+  ],
+  "author": "zhy47146",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
